@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomDatePickerStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">#8B2500</item>
+        <item name="colorPrimaryVariant">#8B2500</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">#8B2500</item>
+        <item name="colorSecondaryVariant">#8B2500</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorAccent">#8B2500</item>
+        <item name="android:colorAccent">#8B2500</item>
+        <item name="android:colorControlActivated">#8B2500</item>
+        <item name="android:colorControlHighlight">#1A8B2500</item>
+    </style>
+
+    <style name="CustomTimePickerStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">#8B2500</item>
+        <item name="colorPrimaryVariant">#8B2500</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">#8B2500</item>
+        <item name="colorSecondaryVariant">#8B2500</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="colorAccent">#8B2500</item>
+        <item name="android:colorAccent">#8B2500</item>
+        <item name="android:colorControlActivated">#8B2500</item>
+        <item name="android:colorControlHighlight">#1A8B2500</item>
+    </style>
+</resources>

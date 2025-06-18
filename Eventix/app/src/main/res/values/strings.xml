@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Eventix</string>
+    <string name="app_logo">Eventix Logo</string>
+    <string name="default_web_client_id">WEB_CLIENT_ID</string>
+</resources>
