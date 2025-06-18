@@ -361,6 +361,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         sliderHandler.removeCallbacks(sliderRunnable)
     }
 
+
     override fun onDestroy() {
         super.onDestroy()
         NotificationListener.stopListening()
