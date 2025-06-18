@@ -696,7 +696,6 @@ class CreateEventActivity : AppCompatActivity(), NavigationView.OnNavigationItem
             .addOnSuccessListener { documentReference ->
                 Log.d(TAG, "Evento criado com sucesso: ${documentReference.id}")
 
-                // Atualizar estatísticas do utilizador: +1 criado, +1 ativo
                 EventStatusManager.updateUserEventStats(
                     userId = currentUserId,
                     incrementCreated = true,
@@ -777,7 +776,6 @@ class CreateEventActivity : AppCompatActivity(), NavigationView.OnNavigationItem
         return true
     }
 
-    // Função atualizada para usar EventStatusManager
     private fun updateUserEventStats(
         userId: String,
         incrementCreated: Boolean = false,
@@ -812,10 +810,6 @@ class CreateEventActivity : AppCompatActivity(), NavigationView.OnNavigationItem
             R.id.nav_guests -> {
                 val intent = Intent(this, GuestsActivity::class.java)
                 intent.putExtra("from", "CreateEventActivity")
-                startActivity(intent)
-            }
-            R.id.nav_settings -> {
-                val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
             }
             R.id.nav_support -> {

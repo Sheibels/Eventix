@@ -122,7 +122,6 @@ class ManagerServicesActivity : AppCompatActivity(), NavigationView.OnNavigation
     }
 
     private fun setupSpinners() {
-        // Usar TipoServicoManager em vez de TipoServico para remover "Favoritos"
         val tiposAdapter = ArrayAdapter(
             this,
             R.layout.spinner_item_category,
@@ -158,7 +157,6 @@ class ManagerServicesActivity : AppCompatActivity(), NavigationView.OnNavigation
 
         when (currentTipoFiltro) {
             TipoServicoManager.TODOS -> {
-                // Não aplica filtro
             }
             else -> {
                 servicesToFilter = servicesToFilter.filter { it.tipo == currentTipoFiltro.nomeExibicao }
@@ -301,10 +299,6 @@ class ManagerServicesActivity : AppCompatActivity(), NavigationView.OnNavigation
         when (item.itemId) {
             R.id.nav_notifications -> {
                 val intent = Intent(this, NotificationsActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.nav_settings -> {
-                val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
             }
         }

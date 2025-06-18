@@ -40,7 +40,6 @@ object LocationAPIClient {
     private const val NOMINATIM_BASE_URL = "https://nominatim.openstreetmap.org/"
     private const val OVERPASS_BASE_URL = "https://overpass-api.de/api/"
 
-    // Cliente HTTP com configurações essenciais
     private val okHttpClient = OkHttpClient.Builder()
         .connectTimeout(15, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)

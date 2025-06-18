@@ -512,10 +512,6 @@ class ManagerEventsActivity : AppCompatActivity(), NavigationView.OnNavigationIt
                 val intent = Intent(this, NotificationsActivity::class.java)
                 startActivity(intent)
             }
-            R.id.nav_settings -> {
-                val intent = Intent(this, SettingsActivity::class.java)
-                startActivity(intent)
-            }
         }
 
         drawerLayout.closeDrawer(GravityCompat.END)

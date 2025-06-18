@@ -41,7 +41,6 @@
                 android:paddingVertical="6dp" />
         </LinearLayout>
 
-        <!-- Informações do Gestor Associado -->
         <androidx.cardview.widget.CardView
             android:id="@+id/cardManagerInfo"
             android:layout_width="match_parent"

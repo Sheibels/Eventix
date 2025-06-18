@@ -164,8 +164,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="true"
-                            app:thumbTint="#8B2500"
-                            app:trackTint="#E0E0E0" />
+                            app:thumbTint="@drawable/switch_thumb_color"
+                            app:trackTint="@drawable/switch_track_color" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

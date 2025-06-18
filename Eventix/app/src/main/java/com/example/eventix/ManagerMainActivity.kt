@@ -31,7 +31,6 @@ class ManagerMainActivity : AppCompatActivity(), NavigationView.OnNavigationItem
     private lateinit var btnMenu: ImageButton
 
     private lateinit var menuNotification: LinearLayout
-    private lateinit var menuSettings: LinearLayout
 
     private lateinit var bottomNavigation: BottomNavigationView
 
@@ -109,7 +108,6 @@ class ManagerMainActivity : AppCompatActivity(), NavigationView.OnNavigationItem
         btnMenu = findViewById(R.id.btnMenu)
 
         menuNotification = findViewById(R.id.menuNotification)
-        menuSettings = findViewById(R.id.menuSettings)
 
         bottomNavigation = findViewById(R.id.bottomNavigation)
 
@@ -142,11 +140,6 @@ class ManagerMainActivity : AppCompatActivity(), NavigationView.OnNavigationItem
 
         menuNotification.setOnClickListener {
             val intent = Intent(this, ManagerNotificationsActivity::class.java)
-            startActivity(intent)
-        }
-
-        menuSettings.setOnClickListener {
-            val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
     }
@@ -202,10 +195,6 @@ class ManagerMainActivity : AppCompatActivity(), NavigationView.OnNavigationItem
         when (item.itemId) {
             R.id.nav_notifications -> {
                 val intent = Intent(this, ManagerNotificationsActivity::class.java)
-                startActivity(intent)
-            }
-            R.id.nav_settings -> {
-                val intent = Intent(this, SettingsActivity::class.java)
                 startActivity(intent)
             }
         }

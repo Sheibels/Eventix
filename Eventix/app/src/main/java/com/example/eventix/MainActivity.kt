@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private lateinit var menuNotification: LinearLayout
     private lateinit var menuGuests: LinearLayout
-    private lateinit var menuSettings: LinearLayout
     private lateinit var menuHelp: LinearLayout
     private lateinit var menuAbout: LinearLayout
 
@@ -128,7 +127,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         menuNotification = findViewById(R.id.menuNotification)
         menuGuests = findViewById(R.id.menuGuests)
-        menuSettings = findViewById(R.id.menuSettings)
         menuHelp = findViewById(R.id.menuHelp)
         menuAbout = findViewById(R.id.menuAbout)
 
@@ -263,11 +261,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(intent)
         }
 
-        menuSettings.setOnClickListener {
-            val intent = Intent(this, SettingsActivity::class.java)
-            startActivity(intent)
-        }
-
         menuHelp.setOnClickListener {
             val intent = Intent(this, SupportActivity::class.java)
             startActivity(intent)
@@ -318,10 +311,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 intent.putExtra("from", "MainActivity")
                 startActivity(intent)
             }
-            R.id.nav_settings -> {
-                val intent = Intent(this, SettingsActivity::class.java)
-                startActivity(intent)
-            }
             R.id.nav_support -> {
                 val intent = Intent(this, SupportActivity::class.java)
                 startActivity(intent)
@@ -360,7 +349,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onPause()
         sliderHandler.removeCallbacks(sliderRunnable)
     }
-
 
     override fun onDestroy() {
         super.onDestroy()

@@ -581,10 +581,6 @@ class ProfileActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 intent.putExtra("from", "ProfileActivity")
                 startActivity(intent)
             }
-            R.id.nav_settings -> {
-                val intent = Intent(this, SettingsActivity::class.java)
-                startActivity(intent)
-            }
             R.id.nav_support -> {
                 val intent = Intent(this, SupportActivity::class.java)
                 startActivity(intent)
